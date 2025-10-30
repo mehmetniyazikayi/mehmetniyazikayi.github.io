@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    {{ content_for_header }}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <header style="padding:8px 0">
+      <a href="{{ '/' | relative_url }}">Home</a> ·
+      <a href="{{ '/about/' | relative_url }}">About</a>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+  </body>
+</html>
+

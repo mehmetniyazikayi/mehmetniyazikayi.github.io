@@ -15,9 +15,6 @@ I’m currently focused on quantum algorithms.
 
 ### Connect with Me
 - **GitHub:** [@mehmetniyazikayi](https://github.com/mehmetniyazikayi)  
-- **LinkedIn:** [Mehmet Niyazi Kayi](www.linkedin.com/in/mehmet-niyazi-kayı-760b73151) 
+- **LinkedIn:** [Mehmet Niyazi Kayi](https://www.linkedin.com/in/mehmet-niyazi-kayı-760b73151) 
 
 ---
-
-*(This site is built with [Jekyll](https://jekyllrb.com) using the `jekyll-theme-midncight` theme.)*
-
