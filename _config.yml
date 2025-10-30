@@ -1,0 +1,16 @@
+theme: jekyll-theme-midnight
+title: QuantBrain
+description: Let's Quantum!
+
+
+# Metadata  
+author:
+  name: Mehmet Niyazi Kayi
+  email: mehmetnkayi@gmail.com
+
+# My main site URL
+url: "https://mehmetniyazikayi.github.io"
+baseurl: ""
+  
+header_pages:
+  - about.md
