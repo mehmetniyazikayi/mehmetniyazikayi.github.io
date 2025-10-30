@@ -5,19 +5,9 @@
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {%- comment -%} Midnight theme stylesheet with cache-buster {%- endcomment -%}
-    <link rel="stylesheet"
-          href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.github.build_revision }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.github.build_revision }}">
 
-    {%- comment -%} Optional: site-wide custom tweaks (create assets/css/custom.css) {%- endcomment -%}
-    {% if site.custom_css %}
-    <link rel="stylesheet" href="{{ site.custom_css | relative_url }}">
-    {% endif %}
-
-    {%- comment -%} SEO tags if plugin enabled; harmless if not {%- endcomment -%}
-    {% if site.seo %}{% seo %}{% endif %}
-
-    {%- comment -%} Hook for per-page additions if you ever need it {%- endcomment -%}
+    {% seo %}
     {{ content_for_header }}
   </head>
   <body>
@@ -26,12 +16,12 @@
         <a href="{{ '/' | relative_url }}">Home</a>
         &nbsp;·&nbsp;
         <a href="{{ '/about/' | relative_url }}">About</a>
-        {# Add more when you create them: Projects, Blog, Search #}
-        &nbsp;·&nbsp;<a href="{{ '/projects/' | relative_url }}">Projects</a>
-        &nbsp;·&nbsp;<a href="{{ '/blog/' | relative_url }}">Blog</a>
-        &nbsp;·&nbsp;<a href="{{ '/search.html' | relative_url }}">Search</a>
-	&nbsp;-&nbsp;<a href="{{ '/tags/' | relative_url }}">Tags</a>
-        {%- endcomment -%}
+        &nbsp;·&nbsp;
+        <a href="{{ '/projects/' | relative_url }}">Projects</a>
+        &nbsp;·&nbsp;
+        <a href="{{ '/tags/' | relative_url }}">Tags</a>
+        &nbsp;·&nbsp;
+        <a href="{{ '/search.html' | relative_url }}">Search</a>
       </div>
     </header>
 
@@ -48,5 +38,4 @@
     </footer>
   </body>
 </html>
-
 
