@@ -13,7 +13,7 @@ The site presents my work and interests in:
 
 - Quantum Computing (QAOA, QPE, VQE, QML)
 - High-Performance Computing (HPC)
-- Quantum ALgorithms and Research Applications
+- Quantum Algorithms and Research Applications
 
 ---
 
