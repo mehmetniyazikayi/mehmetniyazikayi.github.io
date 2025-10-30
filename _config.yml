@@ -11,6 +11,8 @@ author:
 # My main site URL
 url: "https://mehmetniyazikayi.github.io"
 baseurl: ""
-  
+
+exclude:
+  - README.md  
 header_pages:
   - about.md
