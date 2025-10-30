@@ -1,0 +1,12 @@
+<li class="project-card">
+  {% if p.hero %}<img src="{{ p.hero | relative_url }}" alt="" style="max-width:220px;float:right;margin:0 0 10px 10px">{% endif %}
+  <h3><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>
+  <p>{{ p.summary }}</p>
+  <p>
+    {% if p.tech %}<em>{{ p.tech | join: " · " }}</em>{% endif %}
+    {% if p.repo %} · <a href="{{ p.repo }}">Repo</a>{% endif %}
+    {% if p.demo %} · <a href="{{ p.demo }}">Demo</a>{% endif %}
+  </p>
+  <div style="clear:both"></div>
+</li>
+

@@ -1,0 +1,32 @@
+---
+title: Search
+---
+
+<h1>Search</h1>
+<input id="q" type="search" placeholder="Type to search…" style="width:100%;padding:8px">
+<ul id="results"></ul>
+
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script>
+fetch('{{ "/search.json" | relative_url }}').then(r=>r.json()).then(index=>{
+  const lunrIndex = lunr(function () {
+    this.ref('url'); this.field('title'); this.field('content');
+    index.forEach(doc => this.add(doc), this);
+  });
+  const input = document.getElementById('q');
+  const out = document.getElementById('results');
+  input.addEventListener('input', () => {
+    const q = input.value.trim();
+    out.innerHTML = '';
+    if (!q) return;
+    const hits = lunrIndex.search(q).slice(0,20);
+    hits.forEach(hit=>{
+      const doc = index.find(d=>d.url===hit.ref);
+      const li=document.createElement('li');
+      li.innerHTML = `<a href="${doc.url}">${doc.title}</a>`;
+      out.appendChild(li);
+    });
+  });
+});
+</script>
+

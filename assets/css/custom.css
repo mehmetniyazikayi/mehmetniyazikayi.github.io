@@ -1,0 +1,4 @@
+.site-header a { text-decoration: none; }
+.site-header a:hover { text-decoration: underline; }
+.project-card { margin: 12px 0; }
+

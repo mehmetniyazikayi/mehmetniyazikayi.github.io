@@ -3,7 +3,7 @@ title: QuantBrain
 description: Let's Quantum!
 
 
-# Metadata  
+  
 author:
   name: Mehmet Niyazi Kayi
   email: mehmetnkayi@gmail.com
@@ -13,6 +13,31 @@ url: "https://mehmetniyazikayi.github.io"
 baseurl: ""
 
 exclude:
-  - README.md  
-header_pages:
-  - about.md
+  - README.md
+
+custom_css: /assets/css/custom.css
+
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Defaults so you don't repeat front matter
+defaults:
+  - scope: { path: "_projects", type: "projects" }
+    values: { layout: project }
+  - scope: { path: "" }
+    values: { layout: default }
+
+# Useful, GitHub Pages–friendly plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+
+paginate: 5
+paginate_path: "/blog/page:num"
+
