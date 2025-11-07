@@ -1,22 +1,16 @@
-theme: jekyll-theme-midnight
+theme: minima
 title: QuantBrain
 description: Let's Quantum!
 
-
-  
 author:
   name: Mehmet Niyazi Kayi
-  email: mehmetnkayi@gmail.com
+  email: mehmetniyazikayi@gmail.com
 
-# My main site URL
 url: "https://mehmetniyazikayi.github.io"
 baseurl: ""
 
 exclude:
   - README.md
-
-custom_css: /assets/css/custom.css
-
 
 # Collections
 collections:
@@ -24,20 +18,32 @@ collections:
     output: true
     permalink: /projects/:name/
 
-# Defaults so you don't repeat front matter
+# Sensible defaults that DO NOT break Minima
 defaults:
-  - scope: { path: "_projects", type: "projects" }
-    values: { layout: project }
-  - scope: { path: "" }
-    values: { layout: default }
+  # Posts get the blog layout automatically
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+  - scope:
+      path: "_projects"
+      type: "projects"
+    values:
+      layout: project
 
-# Useful, GitHub Pages–friendly plugins
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
-    #  - jekyll-paginate
+  - jekyll-paginate
+
 
 paginate: 5
 paginate_path: "/blog/page:num"
+
+header_pages:
+   - about.md
+   - projects.md
+   - tags.md
 
