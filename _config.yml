@@ -5,7 +5,7 @@ description: Let's Quantum!
 author:
   name: Mehmet Niyazi Kayi
   email: mehmet.nyz.7@gmail.com
-  linkedin: www.linkedin.com/in/mehmet-niyazi-kayı-760b73151
+  linkedin: "https://www.linkedin.com/in/mehmet-niyazi-kayı-760b73151"
 
 url: "https://mehmetniyazikayi.github.io"
 baseurl: ""
@@ -36,7 +36,7 @@ defaults:
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-feed
+    #  - jekyll-feed
   - jekyll-paginate
 
 
