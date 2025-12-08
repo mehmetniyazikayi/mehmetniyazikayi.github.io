@@ -1,6 +1,6 @@
 ---
 title: "QAOA, Let's GOAOAOA !!!"
-date: 2025-11-18
+date: 2025-11-18 17:57:19 +01:00
 layout: post
 tags: [qaoa, quantum, optimization, projects]
 ---

@@ -8,11 +8,21 @@
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}
+
         {%- if paginator and paginator.posts -%}
           {%- for post in paginator.posts -%}
             <article class="post">
               <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-              <span class="post-meta">{{ post.date | date: site.minima.date_format | default: "%b %-d, %Y" }}</span>
+
+              <span class="post-meta">
+                {{ post.date | date: "%B %-d, %Y at %H:%M" }}
+                {% if post.location %}
+                  · {{ post.location }}
+                {% elsif site.author.location %}
+                  · {{ site.author.location }}
+                {% endif %}
+              </span>
+
               {%- if site.show_excerpts -%}
                 <div class="post-excerpt">
                   {{ post.excerpt }}
@@ -20,6 +30,7 @@
               {%- endif -%}
             </article>
           {%- endfor -%}
+
           {%- if paginator.total_pages > 1 -%}
             <nav class="pagination" role="navigation">
               {%- if paginator.previous_page -%}
@@ -31,11 +42,22 @@
               {%- endif -%}
             </nav>
           {%- endif -%}
+
         {%- else -%}
+
           {%- for post in site.posts -%}
             <article class="post">
               <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-              <span class="post-meta">{{ post.date | date: site.minima.date_format | default: "%b %-d, %Y" }}</span>
+
+              <span class="post-meta">
+                {{ post.date | date: "%B %-d, %Y at %H:%M" }}
+                {% if post.location %}
+                  · {{ post.location }}
+                {% elsif site.author.location %}
+                  · {{ site.author.location }}
+                {% endif %}
+              </span>
+
               {%- if site.show_excerpts -%}
                 <div class="post-excerpt">
                   {{ post.excerpt }}
@@ -43,6 +65,7 @@
               {%- endif -%}
             </article>
           {%- endfor -%}
+
         {%- endif -%}
       </div>
     </main>
