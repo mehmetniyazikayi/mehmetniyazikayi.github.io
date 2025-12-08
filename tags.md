@@ -1,9 +1,8 @@
 ---
 title: Tags
+layout: default
 permalink: /tags/
 ---
-
-# Tags
 
 {% assign all = site.projects | map: 'tags' | compact | join: ',' | split: ',' | uniq | sort %}
 <ul>
