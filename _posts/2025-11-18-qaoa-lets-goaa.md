@@ -2,6 +2,9 @@
 title: "QAOA, Let's GOAOAOA !!!"
 date: 2025-11-18 17:57:19 +01:00
 layout: post
+location: "Göttingen, Germany"
+coordinates: "51.5413° N, 9.9158° E"
+author: "Mehmet Niyazi Kayi"
 tags: [qaoa, quantum, optimization, projects]
 ---
 

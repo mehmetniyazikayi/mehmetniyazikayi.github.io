@@ -1,0 +1,22 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {% if page.title %}
+          <h1 class="page-title">{{ page.title }}</h1>
+        {% endif %}
+
+        {{ content }}
+      </div>
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>
+
