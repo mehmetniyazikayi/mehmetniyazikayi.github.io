@@ -77,7 +77,7 @@ Most importantly, working with Mojtaba throughout this project was essential. Ev
 
 ## Closing thoughts
 
-The entire benchmarking effort was completed in an intense two-week window, from 17 November to 31 November. This period involved continuous iteration, late-night debugging sessions, and a surprising number of “why is the throughput suddenly lower today?” moments. Despite the tight schedule, the structure, tuning workflow, and full IO500 evaluation came together quickly thanks to the close collaboration between Mojtaba and me. The compressed timeline ultimately forced clarity: every configuration that stayed in the final setup earned its place.
+The entire benchmarking effort was completed in an intense two-week window, from 17 November 2025 to 31 November 2025. This period involved continuous iteration, late-night debugging sessions, and a surprising number of “why is the throughput suddenly lower today?” moments. Despite the tight schedule, the structure, tuning workflow, and full IO500 evaluation came together quickly thanks to the close collaboration between Mojtaba and me. The compressed timeline ultimately forced clarity: every configuration that stayed in the final setup earned its place.
 
 This project was more than a benchmark exercise. It was a genuinely rewarding collaboration that pushed us to understand how modern HPC storage behaves when the usual layers are stripped away. Mojtaba’s persistence, attention to detail, and willingness to challenge assumptions made this one of the most enjoyable technical explorations I’ve worked on.  
 
