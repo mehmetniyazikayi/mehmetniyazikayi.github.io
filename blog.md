@@ -4,6 +4,7 @@ permalink: /blog/
 ---
 
 # Blog
+{% include blog-intro.html %}
 
 <ul>
   {% for post in paginator.posts %}

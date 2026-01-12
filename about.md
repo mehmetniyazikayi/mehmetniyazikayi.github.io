@@ -4,7 +4,6 @@ title: About
 permalink: /about/
 ---
 
-# About Me
 
 Hi! I'm **Mehmet Niyazi Kayi**, working at the intersection of **Quantum Computing**, **HPC**, **AI applications** and **Use Cases for Quantum Computing**.  
 I’m currently focused on quantum algorithms.
